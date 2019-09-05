@@ -11,20 +11,17 @@ export default class Home extends Component {
 
   constructor(props) {
     super(props);
-    };
+    this.state = {};
   }
-
-  static propTypes = {};
 
   render() {
     return (
       <View>
-      
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  
+
 });

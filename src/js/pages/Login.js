@@ -3,7 +3,7 @@
  */
 import React, {Component} from 'react';
 import {StyleSheet, View, Text, Image} from 'react-native';
-import JPushModule from 'jpush-react-native';
+// import JPushModule from 'jpush-react-native';
 import Style from '../constant/Style';
 import ClearableTextInput from '../components/ClearableTextInput';
 import NorBtn from '../components/NorBtn';
@@ -48,9 +48,9 @@ export default class Login extends BasePage {
           if (alias.includes('-')) {
             alias = alias.replace(/-/g, '');
           }
-          JPushModule.setAlias(alias, success => {
-            console.log('setAlias ', success);
-          });
+          // JPushModule.setAlias(alias, success => {
+          //   console.log('setAlias ', success);
+          // });
           this.props.navigation.navigate('Home');
         }
       })
@@ -97,9 +97,9 @@ export default class Login extends BasePage {
       if (alias.includes('-')) {
         alias = alias.replace(/-/g, '');
       }
-      JPushModule.setAlias(alias, success => {
-        console.log('setAlias ', success);
-      });
+      // JPushModule.setAlias(alias, success => {
+      //   console.log('setAlias ', success);
+      // });
       this.props.navigation.navigate('Home');
     });
   };
